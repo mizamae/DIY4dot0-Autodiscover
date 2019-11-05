@@ -57,9 +57,9 @@ import os
 
 root= tk.Tk()
 root.title("Autodiscovering tool for DIY4dot0")
-background_image=tk.PhotoImage(file="C:\\Users\\Zabaleta-De Carlos\\Documents\\GitHub\\DIY4dot0-AutoDiscover\\src\\dist\\media\\Home_40.gif")
-                                # os.path.join('media','Home_40.gif'))
-                               #"C:\\Users\\Zabaleta-De Carlos\\Documents\\GitHub\\DIY4dot0-AutoDiscover\\src\\dist\\media\\Home_40.gif")
+path=os.path.dirname(os.path.abspath(__file__))
+background_image=tk.PhotoImage(file= os.path.join(path,'dist','media','Home_40.gif'))
+#"C:\\Users\\Zabaleta-De Carlos\\Documents\\GitHub\\DIY4dot0-AutoDiscover\\src\\dist\\media\\Home_40.gif")
 
 canvas1 = tk.Canvas(root, width = 1000, height = 300)
 canvas1.pack(expand='no', fill='both')
